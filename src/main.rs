@@ -1,6 +1,7 @@
 use rand::Rng;
 use std::cmp::Ordering;
 use std::io;
+use std::{thread, time};
 
 fn main() {
     println!("Guess the Number!");
@@ -32,4 +33,7 @@ fn main() {
             }
         }
     }
+    let two_secs = time::Duration::new(2, 0);
+    print!("This window will automatically lose in 2 seconds");
+    thread::sleep(two_secs);
 }
