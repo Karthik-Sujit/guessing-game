@@ -33,7 +33,7 @@ fn main() {
             }
         }
     }
-    println!("This window will automatically close in 2 seconds...");
+    println!("This program will automatically close in 2 seconds...");
     let two_secs = time::Duration::new(2, 0);
     thread::sleep(two_secs);
 }
